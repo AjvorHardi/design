@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@300;400;700&display=swap");
+/**********************
+variables
+**********************/
+/**********************
+mixins
+**********************/
+/**********************
+basic styles
+**********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  background: #fdf9f6;
+  color: #4c3372;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #7c57b4;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+nav {
+  background: #7c57b4;
+  padding: 5px 0;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+nav .container .logo {
+  font-family: "Anton", sans-serif;
+  color: #fdf9f6;
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+nav .container .logo:hover {
+  color: #f1c50e;
+}
+nav .container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+}
+nav .container ul li {
+  margin-left: 60px;
+}
+nav .container ul li a {
+  color: #fdf9f6;
+  text-transform: uppercase;
+}
+nav .container ul li a:hover {
+  color: #f1c50e;
+}
+
+/*# sourceMappingURL=style.css.map */

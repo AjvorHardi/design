@@ -12,6 +12,15 @@ $fontSize: 16px;
 $transition: .4s ease;
 $padding: 70px 0;
 /**********************
+mixins
+**********************/
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+/**********************
 basic styles
 **********************/
 * {
@@ -28,4 +37,41 @@ body {
 }
 h1, h2, h3, h4, h5 {
     color: $primary;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+
+}
+
+nav {
+    background: $primary;
+    padding: 5px 0;
+    .container {
+        @include flex(space-between, center, row);
+        .logo {
+            font-family: $headings;
+            color: $lightGray;
+            font-size: 2rem;
+            letter-spacing: 3px;
+            &:hover {
+                color: $secondary;
+            }
+        }
+        ul {
+            @include flex(center, center, row);
+            list-style: none;
+            li {
+                margin-left: 60px;
+                a {
+                    color: $lightGray;
+                    text-transform: uppercase;
+                    &:hover {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
 }
