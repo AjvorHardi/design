@@ -214,4 +214,53 @@ services
   color: #7c57b4;
 }
 
+/**********************
+team
+**********************/
+.team {
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.team article:first-child {
+  flex: 0 0 48%;
+}
+.team article:first-child p {
+  padding: 20px 0;
+}
+.team article:first-child button {
+  padding: 15px 30px;
+  background: #7c57b4;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-top: 20px;
+}
+.team article:first-child button:hover {
+  cursor: pointer;
+  background: #f1c50e;
+  color: #7c57b4;
+  transition: 0.4s ease;
+}
+.team article:last-child {
+  flex: 0 0 48%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.team article:last-child div {
+  flex: 0 0 50%;
+}
+.team article:last-child div img {
+  width: 80%;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  box-shadow: 0 0 30px gray;
+}
+
 /*# sourceMappingURL=style.css.map */
