@@ -47,6 +47,20 @@ a {
   background: #7c57b4;
 }
 
+.headers {
+  background: #f1c50e;
+  text-align: center;
+  padding: 10px 0;
+}
+.headers h1 {
+  font-size: 2rem;
+  text-shadow: 1px 1px white;
+}
+.headers p {
+  color: #7c57b4;
+  font-size: 1.3rem;
+}
+
 nav {
   background: #7c57b4;
   padding: 5px 0;

@@ -1,5 +1,5 @@
 
-<?php include 'header.php'; ?>
+<?php include 'single-headers.php'; ?>
 
 <h1>Projects</h1>
 

@@ -78,6 +78,19 @@ a {
         background: $primary;
     }
 }
+.headers {
+    background: $secondary;
+    text-align: center;
+    padding: 10px 0;
+    h1 {
+        font-size: 2rem;
+        text-shadow: 1px 1px white;
+    }
+    p {
+        color: $primary;
+        font-size: 1.3rem;
+    }
+}
 
 nav {
     background: $primary;
