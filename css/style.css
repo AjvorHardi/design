@@ -27,9 +27,24 @@ h1, h2, h3, h4, h5 {
   color: #7c57b4;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 90%;
   margin: auto;
+}
+
+.headings {
+  font-size: 3rem;
+}
+.headings::after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 50px;
+  background: #7c57b4;
 }
 
 nav {
@@ -92,7 +107,6 @@ footer .container article:nth-child(2) i {
 }
 footer .container article:nth-child(2) a {
   color: white;
-  text-decoration: none;
 }
 footer .container article:nth-child(3) {
   flex: 0 0 19%;
@@ -112,6 +126,92 @@ footer .container h3 {
   color: #fdf9f6;
   font-size: 1.5rem;
   padding-bottom: 10px;
+}
+
+/**********************
+Header Home
+**********************/
+.headerHome {
+  background-image: url(../img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+
+/**********************
+intro
+**********************/
+.intro {
+  width: 50%;
+  margin: auto;
+  padding: 30px 50px;
+  background: #7c57b4;
+  margin-top: -100px;
+  text-align: center;
+  line-height: 1.2;
+}
+.intro h1 {
+  color: #f1c50e;
+  font-size: 8rem;
+  font-family: "Anton", sans-serif;
+  text-shadow: 3px 3px #4c3372;
+  margin-top: -110px;
+}
+.intro h3 {
+  color: #fdf9f6;
+  font-size: 2.5rem;
+}
+.intro p {
+  font-style: italic;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #fdf9f6;
+}
+
+/**********************
+services
+**********************/
+.services {
+  padding: 70px 0;
+}
+.services p {
+  padding: 20px 0;
+}
+.services div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  height: 70vh;
+}
+.services div article {
+  flex: 0 0 30%;
+  padding: 30px;
+}
+.services div article i {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.services div article:nth-child(1) {
+  background: #7c57b4;
+  color: white;
+}
+.services div article:nth-child(1) h3 {
+  color: white;
+}
+.services div article:nth-child(2) {
+  align-self: center;
+  background: #f1c50e;
+  color: #7c57b4;
+}
+.services div article:nth-child(2) h3 {
+  color: #7c57b4;
+}
+.services div article:nth-child(3) {
+  align-self: flex-end;
+  background: white;
+  color: #7c57b4;
 }
 
 /*# sourceMappingURL=style.css.map */

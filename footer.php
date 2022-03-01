@@ -8,7 +8,7 @@
             <article>
                 <h3>Contact</h3>
                 <ul>
-                    <li><a href=""><i class="fas fa-phone"></i>(508) 901-9001</a></li>
+                    <li><a href=""><i class="fas fa-phone"></i></a>(508) 901-9001</li>
                     <li><a href=""><i class="fas fa-envelope"></i></a>nantucket@design.com</li>
                     <li><a href=""><i class="fas fa-map-marker-alt"></i></a>Nantucket, MA</li>
                 </ul>
