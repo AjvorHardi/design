@@ -277,4 +277,32 @@ team
   box-shadow: 0 0 30px gray;
 }
 
+/**********************
+projects
+**********************/
+.projects {
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.projects article:first-child {
+  flex: 0 0 48%;
+}
+.projects article:first-child p {
+  padding-top: 20px;
+}
+.projects article:last-child {
+  flex: 0 0 48%;
+}
+.projects article:last-child img {
+  width: 100%;
+  box-shadow: 0 0 30px gray;
+}
+
+.slider {
+  background: #f1c50e;
+}
+
 /*# sourceMappingURL=style.css.map */

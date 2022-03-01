@@ -273,3 +273,28 @@ team
         }
     }
 }
+
+/**********************
+projects
+**********************/
+.projects {
+    padding: $padding;
+    @include flex(space-between, center, row);
+    article:first-child {
+        flex: 0 0 48%;
+        p {
+            padding-top: 20px;
+        }
+    }
+    article:last-child {
+        flex: 0 0 48%;
+        img {
+            width: 100%;
+            box-shadow: 0 0 30px gray;
+        }
+    }
+}
+
+.slider {
+    background: $secondary;
+}
