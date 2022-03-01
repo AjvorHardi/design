@@ -77,3 +77,42 @@ nav {
     }
 }
 
+footer {
+    padding: $padding;
+    background: $primary;
+    .container {
+        color: $lightGray;
+        @include flex(space-between, flex-start, row);
+        article:nth-child(1) {
+            flex: 0 0 60%;
+        }
+        article:nth-child(2) {
+            flex: 0 0 16%;
+            i {
+                margin-right: 10px;
+                color: $secondary;
+            }
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+        article:nth-child(3) {
+            flex: 0 0 19%;
+            ul {
+                @include flex(flex-start, center, row);
+                a {
+                    color: $secondary;
+                    margin-right: 10px;
+                    font-size: 2rem;
+                }
+            }
+        }
+        h3 {
+            color: $lightGray;
+            font-size: 1.5rem;
+            padding-bottom: 10px;
+        }
+    }
+    
+}

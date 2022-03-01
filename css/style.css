@@ -69,4 +69,49 @@ nav .container ul li a:hover {
   color: #f1c50e;
 }
 
+footer {
+  padding: 70px 0;
+  background: #7c57b4;
+}
+footer .container {
+  color: #fdf9f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+footer .container article:nth-child(1) {
+  flex: 0 0 60%;
+}
+footer .container article:nth-child(2) {
+  flex: 0 0 16%;
+}
+footer .container article:nth-child(2) i {
+  margin-right: 10px;
+  color: #f1c50e;
+}
+footer .container article:nth-child(2) a {
+  color: white;
+  text-decoration: none;
+}
+footer .container article:nth-child(3) {
+  flex: 0 0 19%;
+}
+footer .container article:nth-child(3) ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+footer .container article:nth-child(3) ul a {
+  color: #f1c50e;
+  margin-right: 10px;
+  font-size: 2rem;
+}
+footer .container h3 {
+  color: #fdf9f6;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */

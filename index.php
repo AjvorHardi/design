@@ -42,9 +42,9 @@
             <article>
                 <h3>Follow Us</h3>
                 <ul>
-                    <li><a href=""><i class="fab fa-facebook-square"></i>(508) 901-9001</a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a>nantucket@design.com</li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a>Nantucket, MA</li>
+                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
                 </ul>
             </article>
         </div>
