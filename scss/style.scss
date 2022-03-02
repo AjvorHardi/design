@@ -67,6 +67,9 @@ a {
 .container {
     width: 90%;
     margin: auto;
+    @media(max-width: 768px) {
+        width: 95%;
+    }
 }
 .headings {
     font-size: 3rem;
@@ -97,6 +100,9 @@ nav {
     padding: 5px 0;
     .container {
         @include flex(space-between, center, row);
+        @media(max-width: 768px) {
+            @include flex(space-between, center, column);
+        }
         .logo {
             font-family: $headings;
             color: $lightGray;
@@ -129,11 +135,20 @@ footer {
     .container {
         color: $lightGray;
         @include flex(space-between, flex-start, row);
+        flex-wrap: wrap;
         article:nth-child(1) {
             flex: 0 0 60%;
+            @media(max-width: 768px) {
+                flex: 0 0 100%;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
         }
         article:nth-child(2) {
             flex: 0 0 16%;
+            @media(max-width: 768px) {
+                flex: 0 0 50%;
+            }
             i {
                 margin-right: 10px;
                 color: $secondary;
@@ -168,6 +183,9 @@ Header Home
 .headerHome {
     background-image: url(../img/header.jpg);
     @include bgImg(center, cover, no-repeat, 80vh);
+    @media(max-width: 768px) {
+        @include bgImg(center, cover, no-repeat, 60vh);
+    }
 }
 
 /**********************
@@ -181,12 +199,19 @@ intro
     margin-top: -100px;
     text-align: center;
     line-height: 1.2;
+    @media(max-width: 768px) {
+        width: 80%;
+    }
     h1 {
         color: $secondary;
         font-size: 8rem;
         font-family: $headings;
         text-shadow: 3px 3px darken($primary, 20%);
         margin-top: -110px;
+        @media(max-width: 768px) {
+            font-size: 3rem;
+            margin-top: -55px;
+        }
     }
     h3 {
         color: $lightGray;
@@ -212,6 +237,10 @@ services
     div {
         @include flex(space-between, flex-start, row);
         height: 70vh;
+        @media(max-width: 768px) {
+            @include flex(space-between, flex-start, column);
+            height: auto;
+        }
         article {
             flex: 0 0 30%;
             padding: 30px;
@@ -249,8 +278,13 @@ team
 .team {
     padding: $padding;
     @include flex(space-between, center, row);
+    flex-wrap: wrap;
     article:first-child {
         flex: 0 0 48%;
+        @media(max-width: 768px) {
+            flex: 0 0 100%;
+            margin-bottom: 40px;
+        }
         p {
             padding: 20px 0;
         }
@@ -262,6 +296,9 @@ team
         flex: 0 0 48%;
         @include flex(space-between, center, row);
         flex-wrap: wrap;
+        @media(max-width: 768px) {
+            flex: 0 0 100%;
+        }
         div {
             flex: 0 0 50%;
             img {
@@ -280,14 +317,22 @@ projects
 .projects {
     padding: $padding;
     @include flex(space-between, center, row);
+    flex-wrap: wrap;
     article:first-child {
         flex: 0 0 48%;
+        @media(max-width: 768px) {
+            flex: 0 0 100%;
+            margin-bottom: 40px;
+        }
         p {
             padding-top: 20px;
         }
     }
     article:last-child {
         flex: 0 0 48%;
+        @media(max-width: 768px) {
+            flex: 0 0 100%;
+        }
         img {
             width: 100%;
             box-shadow: 0 0 30px gray;
